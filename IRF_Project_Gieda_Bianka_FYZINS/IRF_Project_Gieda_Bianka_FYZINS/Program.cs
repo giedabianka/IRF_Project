@@ -16,7 +16,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Inditas());
         }
     }
 }

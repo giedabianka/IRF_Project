@@ -21,7 +21,6 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             InitializeComponent();
             BetuMatrix();
             SzavakBetoltese();
-            
         }
 
         private void BetuMatrix()
@@ -47,16 +46,15 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
 
         private void SzavakBetoltese()
         {
-            using (StreamReader szo = new StreamReader("szavak.csv", Encoding.Default))
+            using (StreamReader sz = new StreamReader("szavak.csv", Encoding.Default))
             {
-                while (!szo.EndOfStream)
+                while (!sz.EndOfStream)
                 {
-                    szavak = szo.ReadLine().Split(';');
+                    szavak = sz.ReadLine().Split(';');
                 }
-
             }
-
         }
+
 
 
 
