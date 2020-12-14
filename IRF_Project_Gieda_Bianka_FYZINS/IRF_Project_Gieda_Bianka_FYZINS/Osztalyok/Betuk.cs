@@ -49,10 +49,17 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
                     Form1.kitalalando.Text += Form1.masoltjelenlegi.Substring(i, 1);
                     Form1.kitalalando.Text += " ";
                 }
+          
+                betutipp.Visible = false;
             }
+            else
+            {
+                betutipp.Visible = false;
+                Form1.hibas_betuk.Text += (betutipp.Text) + (" ");
+            }
+
+
         }
-
-
 
     }
 }
