@@ -96,7 +96,7 @@
             this.Jatek_inditasa_Btn.TabIndex = 5;
             this.Jatek_inditasa_Btn.Text = "Játék indítása";
             this.Jatek_inditasa_Btn.UseVisualStyleBackColor = true;
-            this.Jatek_inditasa_Btn.Click += new System.EventHandler(this.Jatek_inditasa_Btn_Click);
+            this.Jatek_inditasa_Btn.Click += new System.EventHandler(this.Jatek_inditasa_Btn_Click_1);
             // 
             // Inditas
             // 

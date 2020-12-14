@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -15,12 +16,23 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
     public partial class Form1 : Form
     {
         string[] szavak;
+        int kivbetuszam;
+        int kivjatekosszam;
 
-        public Form1()
+        string[] azonhossz_tomb;
+        public static string jelenlegi = "";
+
+        public Form1(int a, int b)
         {
             InitializeComponent();
+
+            kivbetuszam = a;
+            kivjatekosszam = b;
+
             BetuMatrix();
             SzavakBetoltese();
+            SzavakHossza();
+           
         }
 
         private void BetuMatrix()
@@ -55,6 +67,15 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             }
         }
 
+        private void SzavakHossza()
+        {
+            var azonoshosszusagu = from x in szavak
+                                   where x.Length == kivbetuszam
+                                   select x;
+             azonhossz_tomb = azonoshosszusagu.ToArray();
+
+            MessageBox.Show(azonhossz_tomb[2]);
+        }
 
 
 
