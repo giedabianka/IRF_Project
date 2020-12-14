@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel_betuk = new System.Windows.Forms.Panel();
-            this.kitalalando = new System.Windows.Forms.Label();
+            kitalalando = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel_betuk
@@ -41,18 +41,18 @@
             // 
             // kitalalando
             // 
-            this.kitalalando.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.kitalalando.Location = new System.Drawing.Point(43, 87);
-            this.kitalalando.Name = "kitalalando";
-            this.kitalalando.Size = new System.Drawing.Size(303, 43);
-            this.kitalalando.TabIndex = 1;
+            kitalalando.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            kitalalando.Location = new System.Drawing.Point(43, 87);
+            kitalalando.Name = "kitalalando";
+            kitalalando.Size = new System.Drawing.Size(303, 43);
+            kitalalando.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 411);
-            this.Controls.Add(this.kitalalando);
+            this.Controls.Add(kitalalando);
             this.Controls.Add(this.panel_betuk);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -63,7 +63,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_betuk;
-        private System.Windows.Forms.Label kitalalando;
+        public static System.Windows.Forms.Label kitalalando;
     }
 }
 

@@ -28,7 +28,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
         public Form1(int a, int b)
         {
             InitializeComponent();
-
+            
             kivbetuszam = a;
             kivjatekosszam = b;
 
@@ -107,6 +107,8 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
                 kitalalando.Text += " ";
             }
         }
+
+
 
     }
 }
