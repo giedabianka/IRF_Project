@@ -15,12 +15,15 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
 {
     public partial class Form1 : Form
     {
+        //SZAVAKHOSSZA
         string[] szavak;
         int kivbetuszam;
         int kivjatekosszam;
 
+        //RANDOMGENERALAS_VONALAK
         string[] azonhossz_tomb;
         public static string jelenlegi = "";
+        public static string masoltjelenlegi = "";
 
         public Form1(int a, int b)
         {
@@ -32,6 +35,8 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             BetuMatrix();
             SzavakBetoltese();
             SzavakHossza();
+            RandomGeneralas();
+            Vonalak();
            
         }
 
@@ -73,11 +78,35 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
                                    where x.Length == kivbetuszam
                                    select x;
              azonhossz_tomb = azonoshosszusagu.ToArray();
-
-            MessageBox.Show(azonhossz_tomb[2]);
         }
 
+        private void RandomGeneralas()
+        {
+            Random rand = new Random();
+            string valasztott = azonhossz_tomb[rand.Next(azonhossz_tomb.Length)].ToUpper();
+            jelenlegi = valasztott;
+        }
 
+        private void Vonalak()
+        {
+            RandomGeneralas();
+
+            for (int i = 0; i < jelenlegi.Length; i++)
+            {
+                masoltjelenlegi += "_";
+            }
+
+            Megjelenites();
+        }
+
+        private void Megjelenites()
+        {
+            for (int i = 0; i < masoltjelenlegi.Length; i++)
+            {
+                kitalalando.Text += masoltjelenlegi.Substring(i, 1);
+                kitalalando.Text += " ";
+            }
+        }
 
     }
 }
