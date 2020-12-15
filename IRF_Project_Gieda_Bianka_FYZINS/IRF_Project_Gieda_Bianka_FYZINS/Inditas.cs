@@ -28,6 +28,10 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             ablak.Show();
             this.Hide();
         }
+
+        private void Inditas_Load(object sender, EventArgs e)
+        {
+        }
     }
 
 }
