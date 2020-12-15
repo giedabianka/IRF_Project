@@ -63,6 +63,26 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jatek {
+            get {
+                object obj = ResourceManager.GetObject("jatek", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kezdokep {
+            get {
+                object obj = ResourceManager.GetObject("kezdokep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kezdokep_01 {
             get {
                 object obj = ResourceManager.GetObject("kezdokep-01", resourceCulture);

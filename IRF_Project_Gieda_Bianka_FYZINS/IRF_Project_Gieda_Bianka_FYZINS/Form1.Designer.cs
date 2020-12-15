@@ -29,40 +29,44 @@
         private void InitializeComponent()
         {
             this.panel_betuk = new System.Windows.Forms.Panel();
-            kitalalando = new System.Windows.Forms.Label();
-            hibas_betuk = new System.Windows.Forms.Label();
+            this.kitalalando = new System.Windows.Forms.Label();
+            this.hibas_betuk = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel_betuk
             // 
-            this.panel_betuk.Location = new System.Drawing.Point(27, 190);
+            this.panel_betuk.BackColor = System.Drawing.Color.Transparent;
+            this.panel_betuk.Location = new System.Drawing.Point(45, 221);
             this.panel_betuk.Name = "panel_betuk";
-            this.panel_betuk.Size = new System.Drawing.Size(300, 200);
+            this.panel_betuk.Size = new System.Drawing.Size(280, 200);
             this.panel_betuk.TabIndex = 0;
             // 
             // kitalalando
             // 
-            kitalalando.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            kitalalando.Location = new System.Drawing.Point(24, 86);
-            kitalalando.Name = "kitalalando";
-            kitalalando.Size = new System.Drawing.Size(303, 43);
-            kitalalando.TabIndex = 1;
+            this.kitalalando.BackColor = System.Drawing.Color.Transparent;
+            this.kitalalando.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kitalalando.Location = new System.Drawing.Point(69, 102);
+            this.kitalalando.Name = "kitalalando";
+            this.kitalalando.Size = new System.Drawing.Size(230, 43);
+            this.kitalalando.TabIndex = 1;
             // 
             // hibas_betuk
             // 
-            hibas_betuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            hibas_betuk.Location = new System.Drawing.Point(351, 296);
-            hibas_betuk.Name = "hibas_betuk";
-            hibas_betuk.Size = new System.Drawing.Size(287, 94);
-            hibas_betuk.TabIndex = 2;
+            this.hibas_betuk.BackColor = System.Drawing.Color.Transparent;
+            this.hibas_betuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.hibas_betuk.Location = new System.Drawing.Point(347, 318);
+            this.hibas_betuk.Name = "hibas_betuk";
+            this.hibas_betuk.Size = new System.Drawing.Size(276, 101);
+            this.hibas_betuk.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 411);
-            this.Controls.Add(hibas_betuk);
-            this.Controls.Add(kitalalando);
+            this.BackgroundImage = global::IRF_Project_Gieda_Bianka_FYZINS.Properties.Resources.jatek;
+            this.ClientSize = new System.Drawing.Size(679, 450);
+            this.Controls.Add(this.hibas_betuk);
+            this.Controls.Add(this.kitalalando);
             this.Controls.Add(this.panel_betuk);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -73,8 +77,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_betuk;
-        public static System.Windows.Forms.Label hibas_betuk;
-        public static System.Windows.Forms.Label kitalalando;
+        public System.Windows.Forms.Label hibas_betuk;
+        public System.Windows.Forms.Label kitalalando;
     }
 }
 

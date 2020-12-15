@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="Resources\kezdokep-01.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\jatek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\kezdokep.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
