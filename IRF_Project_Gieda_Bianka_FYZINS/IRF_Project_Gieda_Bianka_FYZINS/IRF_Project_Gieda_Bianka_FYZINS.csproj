@@ -68,6 +68,7 @@
     <Compile Include="Osztalyok\Betuk.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Osztalyok\Eredmenyek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Diagram.resx">

@@ -31,42 +31,42 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.DiagramChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.DiagramChart)).BeginInit();
             this.SuspendLayout();
             // 
-            // chart1
+            // DiagramChart
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.DiagramChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(78, 47);
-            this.chart1.Name = "chart1";
+            this.DiagramChart.Legends.Add(legend1);
+            this.DiagramChart.Location = new System.Drawing.Point(78, 47);
+            this.DiagramChart.Name = "DiagramChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(532, 352);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
+            this.DiagramChart.Series.Add(series1);
+            this.DiagramChart.Size = new System.Drawing.Size(532, 352);
+            this.DiagramChart.TabIndex = 0;
+            this.DiagramChart.Text = "chart1";
             // 
             // Diagram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 450);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.DiagramChart);
             this.Name = "Diagram";
             this.Text = "Diagram";
             this.Load += new System.EventHandler(this.Diagram_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiagramChart)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart DiagramChart;
     }
 }
