@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IRF_Project_Gieda_Bianka_FYZINS.Properties.Resources.kezdokep;
+            this.BackgroundImage = global::IRF_Project_Gieda_Bianka_FYZINS.Properties.Resources.kezdokep1;
             this.ClientSize = new System.Drawing.Size(679, 450);
             this.Controls.Add(this.Jatek_inditasa_Btn);
             this.Controls.Add(this.Betuk_szama_Cbox);

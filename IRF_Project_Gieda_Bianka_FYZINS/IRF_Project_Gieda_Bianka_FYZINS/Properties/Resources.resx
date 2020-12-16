@@ -118,13 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="jatek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\jatek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kezdokep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\kezdokep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kezdokep-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kezdokep-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kezdokep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="jatek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\jatek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kezdokep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\kezdokep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

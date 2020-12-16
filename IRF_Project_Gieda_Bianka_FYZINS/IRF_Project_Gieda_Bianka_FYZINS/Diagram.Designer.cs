@@ -41,7 +41,7 @@
             this.DiagramChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.DiagramChart.Legends.Add(legend1);
-            this.DiagramChart.Location = new System.Drawing.Point(78, 47);
+            this.DiagramChart.Location = new System.Drawing.Point(73, 52);
             this.DiagramChart.Name = "DiagramChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
