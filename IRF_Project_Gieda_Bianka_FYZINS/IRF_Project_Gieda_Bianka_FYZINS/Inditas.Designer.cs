@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Jatekosok_szama_Cbox = new System.Windows.Forms.ComboBox();
             this.Betuk_szama_Cbox = new System.Windows.Forms.ComboBox();
             this.Jatek_inditasa_Btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Jatekosok_szama_Cbox
-            // 
-            this.Jatekosok_szama_Cbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Jatekosok_szama_Cbox.FormattingEnabled = true;
-            this.Jatekosok_szama_Cbox.Location = new System.Drawing.Point(522, 232);
-            this.Jatekosok_szama_Cbox.Name = "Jatekosok_szama_Cbox";
-            this.Jatekosok_szama_Cbox.Size = new System.Drawing.Size(63, 28);
-            this.Jatekosok_szama_Cbox.TabIndex = 1;
             // 
             // Betuk_szama_Cbox
             // 
@@ -72,7 +62,6 @@
             this.ClientSize = new System.Drawing.Size(679, 450);
             this.Controls.Add(this.Jatek_inditasa_Btn);
             this.Controls.Add(this.Betuk_szama_Cbox);
-            this.Controls.Add(this.Jatekosok_szama_Cbox);
             this.Name = "Inditas";
             this.Text = "Inditas";
             this.Load += new System.EventHandler(this.Inditas_Load);
@@ -81,7 +70,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox Jatekosok_szama_Cbox;
         private System.Windows.Forms.ComboBox Betuk_szama_Cbox;
         private System.Windows.Forms.Button Jatek_inditasa_Btn;
     }

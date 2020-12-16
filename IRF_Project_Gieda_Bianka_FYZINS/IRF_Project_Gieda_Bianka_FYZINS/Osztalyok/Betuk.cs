@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
 {
     class Betuk : Button
     {
-        int kor = 1;
+        public static int kor = 1;
         public static int hiba = 0;
 
         public static Form1 _frm1;
@@ -20,7 +21,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
         public Betuk(Form1 frm1)
         {
             _frm1 = frm1;
-
+            
             Height = 35;
             Width = Height;
             BackColor = Color.White;
@@ -71,6 +72,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
                 _frm1.pictureBox1.Image = Image.FromFile("akasztofa_08.png");
 
                 //ÚJRATÖLTÉS
+                _frm1.pictureBox1.Image = Image.FromFile("akasztofa_00.png");
                 _frm1.hibas_betuk.Text = "";
                 Form1.jelenlegi = "";
                 Form1.masoltjelenlegi = "";
@@ -79,6 +81,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
                 _frm1.BetuMatrix();
                 _frm1.SzavakHossza();
                 _frm1.Vonalak();
+                
             }
         }
 
@@ -141,13 +144,18 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
                     {
                         ered.pontokszama = 70;
                     }
+
+                    //hibak eseten pontlevonas
+                    ered.pontokszama = ered.pontokszama - hiba * 2;
                     
                     ered.korokszama = kor;
                     eredmenyek3.Add(ered);
 
                     kor++;
+                    MessageBox.Show("Gratulálok! Kitaláltad a helyes megfejtést! :)");
 
                     //ÚJRATÖLTÉS
+                    _frm1.pictureBox1.Image = Image.FromFile("akasztofa_00.png");
                     _frm1.hibas_betuk.Text = "";
                     Form1.jelenlegi = "";
                     Form1.masoltjelenlegi = "";
@@ -158,14 +166,12 @@ namespace IRF_Project_Gieda_Bianka_FYZINS.Osztalyok
                     _frm1.Vonalak();
 
                 }
-                                  
-                //betutipp.Visible = false;
+
             }
 
             //ROSSZ TIPPEK
             else
             {
-                //betutipp.Visible = false;
                 _frm1.hibas_betuk.Text += (betutipp.Text) + (" ");
                 Kepek(_frm1);
             }

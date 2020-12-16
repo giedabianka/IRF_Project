@@ -19,19 +19,17 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
         //SZAVAKHOSSZA
         string[] szavak;
         public static int kivbetuszam;
-        public static int kivjatekosszam;
 
         //RANDOMGENERALAS_VONALAK
         string[] azonhossz_tomb;
         public static string jelenlegi = "";
         public static string masoltjelenlegi = "";
 
-        public Form1(int a, int b)
+        public Form1(int a)
         {
             InitializeComponent();
 
             kivbetuszam = a;
-            kivjatekosszam = b;
 
             BetuMatrix();
             SzavakBetoltese();
@@ -108,20 +106,15 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             }
         }
 
-        private void btn_ujjatek_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {;
             Diagram d = new Diagram(Betuk.eredmenyek3);
             d.Show();
-            this.Hide();
         }
 
         private void btn_vege_Click(object sender, EventArgs e)
         {
+            this.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
