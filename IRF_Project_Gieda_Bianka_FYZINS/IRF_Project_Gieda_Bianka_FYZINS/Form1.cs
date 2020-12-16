@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,7 +29,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
         public Form1(int a, int b)
         {
             InitializeComponent();
-            
+
             kivbetuszam = a;
             kivjatekosszam = b;
 
@@ -36,21 +37,20 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             SzavakBetoltese();
             SzavakHossza();
             RandomGeneralas();
-            Vonalak();
-           
+            Vonalak();            
         }
 
         private void BetuMatrix()
         {
             int tavolsag = 2;
-            string[] felirat = new string[35] {"A","Á","B","C","D","E","F","G","H","I","Í","J","K","L","J","M","N","O","Ó","Ö","Ő","P","Q","R","S","T","U","Ú","Ü","Ű","V","W","X","Y","Z"};
-            int i=0;
+            string[] felirat = new string[35] { "A", "Á", "B", "C", "D", "E", "F", "G", "H", "I", "Í", "J", "K", "L", "J", "M", "N", "O", "Ó", "Ö", "Ő", "P", "Q", "R", "S", "T", "U", "Ú", "Ü", "Ű", "V", "W", "X", "Y", "Z" };
+            int i = 0;
 
             for (int row = 0; row < 5; row++)
             {
                 for (int col = 0; col < 7; col++)
                 {
-                    Betuk b = new Betuk();
+                    Betuk b = new Betuk(this);
                     b.Left = col * b.Width + (int)(Math.Floor((double)(col))) * tavolsag;
                     b.Top = row * b.Height + (int)(Math.Floor((double)(row))) * tavolsag;
                     panel_betuk.Controls.Add(b);
@@ -77,7 +77,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             var azonoshosszusagu = from x in szavak
                                    where x.Length == kivbetuszam
                                    select x;
-             azonhossz_tomb = azonoshosszusagu.ToArray();
+            azonhossz_tomb = azonoshosszusagu.ToArray();
         }
 
         private void RandomGeneralas()
@@ -108,7 +108,9 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             }
         }
 
-
-
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
     }
+    
 }

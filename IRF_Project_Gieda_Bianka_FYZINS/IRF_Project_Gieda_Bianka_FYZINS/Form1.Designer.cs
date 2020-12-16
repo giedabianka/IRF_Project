@@ -31,6 +31,8 @@
             this.panel_betuk = new System.Windows.Forms.Panel();
             this.kitalalando = new System.Windows.Forms.Label();
             this.hibas_betuk = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_betuk
@@ -45,9 +47,9 @@
             // 
             this.kitalalando.BackColor = System.Drawing.Color.Transparent;
             this.kitalalando.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.kitalalando.Location = new System.Drawing.Point(69, 102);
+            this.kitalalando.Location = new System.Drawing.Point(88, 111);
             this.kitalalando.Name = "kitalalando";
-            this.kitalalando.Size = new System.Drawing.Size(230, 43);
+            this.kitalalando.Size = new System.Drawing.Size(210, 43);
             this.kitalalando.TabIndex = 1;
             // 
             // hibas_betuk
@@ -59,17 +61,29 @@
             this.hibas_betuk.Size = new System.Drawing.Size(276, 101);
             this.hibas_betuk.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(396, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(211, 245);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IRF_Project_Gieda_Bianka_FYZINS.Properties.Resources.jatek;
             this.ClientSize = new System.Drawing.Size(679, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.hibas_betuk);
             this.Controls.Add(this.kitalalando);
             this.Controls.Add(this.panel_betuk);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -78,6 +92,7 @@
 
         private System.Windows.Forms.Panel panel_betuk;
         public System.Windows.Forms.Label hibas_betuk;
+        public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label kitalalando;
     }
 }
