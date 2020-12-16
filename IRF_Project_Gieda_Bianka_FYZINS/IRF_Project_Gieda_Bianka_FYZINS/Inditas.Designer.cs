@@ -55,7 +55,7 @@
             // 
             this.Jatek_inditasa_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(174)))), ((int)(((byte)(121)))));
             this.Jatek_inditasa_Btn.Font = new System.Drawing.Font("Bradley Hand ITC", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Jatek_inditasa_Btn.Location = new System.Drawing.Point(342, 366);
+            this.Jatek_inditasa_Btn.Location = new System.Drawing.Point(331, 360);
             this.Jatek_inditasa_Btn.Name = "Jatek_inditasa_Btn";
             this.Jatek_inditasa_Btn.Size = new System.Drawing.Size(254, 45);
             this.Jatek_inditasa_Btn.TabIndex = 5;

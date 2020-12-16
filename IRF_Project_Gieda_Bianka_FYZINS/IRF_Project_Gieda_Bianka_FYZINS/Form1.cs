@@ -18,8 +18,8 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
     {
         //SZAVAKHOSSZA
         string[] szavak;
-        int kivbetuszam;
-        int kivjatekosszam;
+        public static int kivbetuszam;
+        public static int kivjatekosszam;
 
         //RANDOMGENERALAS_VONALAK
         string[] azonhossz_tomb;
@@ -40,7 +40,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             Vonalak();            
         }
 
-        private void BetuMatrix()
+        public void BetuMatrix()
         {
             int tavolsag = 2;
             string[] felirat = new string[35] { "A", "Á", "B", "C", "D", "E", "F", "G", "H", "I", "Í", "J", "K", "L", "J", "M", "N", "O", "Ó", "Ö", "Ő", "P", "Q", "R", "S", "T", "U", "Ú", "Ü", "Ű", "V", "W", "X", "Y", "Z" };
@@ -72,7 +72,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             }
         }
 
-        private void SzavakHossza()
+        public void SzavakHossza()
         {
             var azonoshosszusagu = from x in szavak
                                    where x.Length == kivbetuszam
@@ -87,7 +87,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             jelenlegi = valasztott;
         }
 
-        private void Vonalak()
+        public void Vonalak()
         {
             RandomGeneralas();
 
@@ -99,7 +99,7 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             Megjelenites();
         }
 
-        private void Megjelenites()
+        public void Megjelenites()
         {
             for (int i = 0; i < masoltjelenlegi.Length; i++)
             {
@@ -108,14 +108,21 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             }
         }
 
-
-        private void Jatek_inditasa_Btn_Click(object sender, EventArgs e)
+        private void btn_ujjatek_Click(object sender, EventArgs e)
         {
-            Diagram ablak = new Diagram();
-            ablak.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {;
+            Diagram d = new Diagram(Betuk.eredmenyek3);
+            d.Show();
             this.Hide();
         }
 
+        private void btn_vege_Click(object sender, EventArgs e)
+        {
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

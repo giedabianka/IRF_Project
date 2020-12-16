@@ -32,7 +32,9 @@
             this.kitalalando = new System.Windows.Forms.Label();
             this.hibas_betuk = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Jatek_inditasa_Btn = new System.Windows.Forms.Button();
+            this.btn_ujjatek = new System.Windows.Forms.Button();
+            this.btn_vege = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,17 +73,41 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // Jatek_inditasa_Btn
+            // btn_ujjatek
             // 
-            this.Jatek_inditasa_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(174)))), ((int)(((byte)(121)))));
-            this.Jatek_inditasa_Btn.Font = new System.Drawing.Font("Bradley Hand ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Jatek_inditasa_Btn.Location = new System.Drawing.Point(512, 393);
-            this.Jatek_inditasa_Btn.Name = "Jatek_inditasa_Btn";
-            this.Jatek_inditasa_Btn.Size = new System.Drawing.Size(155, 45);
-            this.Jatek_inditasa_Btn.TabIndex = 6;
-            this.Jatek_inditasa_Btn.Text = "Eredményeim";
-            this.Jatek_inditasa_Btn.UseVisualStyleBackColor = false;
-            this.Jatek_inditasa_Btn.Click += new System.EventHandler(this.Jatek_inditasa_Btn_Click);
+            this.btn_ujjatek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(174)))), ((int)(((byte)(121)))));
+            this.btn_ujjatek.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ujjatek.Location = new System.Drawing.Point(341, 390);
+            this.btn_ujjatek.Name = "btn_ujjatek";
+            this.btn_ujjatek.Size = new System.Drawing.Size(136, 45);
+            this.btn_ujjatek.TabIndex = 8;
+            this.btn_ujjatek.Text = "Új játék";
+            this.btn_ujjatek.UseVisualStyleBackColor = false;
+            this.btn_ujjatek.Click += new System.EventHandler(this.btn_ujjatek_Click);
+            // 
+            // btn_vege
+            // 
+            this.btn_vege.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(174)))), ((int)(((byte)(121)))));
+            this.btn_vege.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vege.Location = new System.Drawing.Point(493, 390);
+            this.btn_vege.Name = "btn_vege";
+            this.btn_vege.Size = new System.Drawing.Size(130, 45);
+            this.btn_vege.TabIndex = 9;
+            this.btn_vege.Text = "Játék vége";
+            this.btn_vege.UseVisualStyleBackColor = false;
+            this.btn_vege.Click += new System.EventHandler(this.btn_vege_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(174)))), ((int)(((byte)(121)))));
+            this.button1.Font = new System.Drawing.Font("Bradley Hand ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(53, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 45);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Eredményeim";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -89,7 +115,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IRF_Project_Gieda_Bianka_FYZINS.Properties.Resources.jatek;
             this.ClientSize = new System.Drawing.Size(679, 450);
-            this.Controls.Add(this.Jatek_inditasa_Btn);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_vege);
+            this.Controls.Add(this.btn_ujjatek);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.hibas_betuk);
             this.Controls.Add(this.kitalalando);
@@ -108,7 +136,9 @@
         public System.Windows.Forms.Label hibas_betuk;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label kitalalando;
-        private System.Windows.Forms.Button Jatek_inditasa_Btn;
+        private System.Windows.Forms.Button btn_ujjatek;
+        private System.Windows.Forms.Button btn_vege;
+        private System.Windows.Forms.Button button1;
     }
 }
 

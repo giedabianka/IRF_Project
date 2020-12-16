@@ -13,35 +13,19 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
 {
     public partial class Diagram : Form
     {
-        List<Eredmenyek> eredmenyek = new List<Eredmenyek>();
+        public List<Eredmenyek> eredmenyek = new List<Eredmenyek>();
 
-        public Diagram()
+        public Diagram(List<Eredmenyek> eredmenyek2)
         {
             InitializeComponent();
+            eredmenyek = eredmenyek2;
             ListaFeltoltes();
             EredmenyDiagram();
+            
         }
 
-        private void ListaFeltoltes()
+       private void ListaFeltoltes()
         {
-            eredmenyek.Add(new Eredmenyek
-            {
-                korokszama = 1,
-                pontokszama = 65,
-            });
-
-            eredmenyek.Add(new Eredmenyek
-            {
-                korokszama = 2,
-                pontokszama = 80,
-            });
-
-            eredmenyek.Add(new Eredmenyek
-            {
-                korokszama = 3,
-                pontokszama = 40,
-            });
-
             foreach (var eredmeny in eredmenyek)
             {
                 Console.WriteLine(eredmeny.korokszama);

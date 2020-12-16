@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IRF_Project_Gieda_Bianka_FYZINS.Osztalyok;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,13 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
 
         private void Inditas_Load(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Diagram ablak = new Diagram(Betuk.eredmenyek3);
+            ablak.Show();
+            this.Hide();
         }
     }
 
