@@ -34,6 +34,7 @@
             // 
             // Betuk_szama_Cbox
             // 
+            this.Betuk_szama_Cbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Betuk_szama_Cbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Betuk_szama_Cbox.FormattingEnabled = true;
             this.Betuk_szama_Cbox.Location = new System.Drawing.Point(533, 276);

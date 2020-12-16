@@ -125,6 +125,7 @@
     <Content Include="akasztofa_06.png" />
     <Content Include="akasztofa_07.png" />
     <Content Include="akasztofa_08.png" />
+    <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
