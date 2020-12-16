@@ -108,6 +108,15 @@ namespace IRF_Project_Gieda_Bianka_FYZINS
             }
         }
 
+
+        private void Jatek_inditasa_Btn_Click(object sender, EventArgs e)
+        {
+            Diagram ablak = new Diagram();
+            ablak.Show();
+            this.Hide();
+        }
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
         }
